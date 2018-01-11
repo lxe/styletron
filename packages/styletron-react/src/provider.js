@@ -3,9 +3,14 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
 
+import type StyletronCore from 'styletron-core';
+
+type providerPropsT = {|
+  styletron: StyletronCore,
+  children: React.Element<any>,
+|};
+
 /**
- * @class StyletronProvider
- * @packagename styletron-react
  * @description Provides a Styletron instance to descendant styled components via context
  * @example
  * const Styletron = require('styletron');
@@ -22,14 +27,6 @@ import PropTypes from 'prop-types';
  * @property {ReactElement} children - children
  * @extends ReactClass
  */
-
-import type StyletronCore from 'styletron-core';
-
-type providerPropsT = {|
-  styletron: StyletronCore,
-  children: React.Element<any>,
-|};
-
 class StyletronProvider extends React.Component<providerPropsT> {
   styletron: StyletronCore;
 
