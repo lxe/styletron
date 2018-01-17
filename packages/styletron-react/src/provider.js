@@ -11,7 +11,9 @@ type providerPropsT = {|
 |};
 
 /**
- * @description Provides a Styletron instance to descendant styled components via context
+ * Provides a Styletron instance to descendant styled components via context
+ * @name StyletronProviderReact
+ * @exportName StyletronProvider
  * @example
  * const Styletron = require('styletron');
  *
